@@ -1,0 +1,1 @@
+##  this.$store.dispatch('action方法名',值)
