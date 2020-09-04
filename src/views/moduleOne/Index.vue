@@ -1,6 +1,7 @@
 <template>
-<div class="module-one">
-</div>
+  <div class="module-one">
+    <h3>我是模块一</h3>
+  </div>
 </template>
 <script>
 import { mapGetters } from 'vuex'
@@ -28,7 +29,7 @@ export default {
 }
 </script>
 <style lang="scss" scoped>
-.module-one{
-  flex:1;
+.module-one {
+  flex: 1;
 }
 </style>

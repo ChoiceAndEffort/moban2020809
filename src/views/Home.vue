@@ -3,15 +3,15 @@
     <div class="content">
       <router-view />
     </div>
-    <van-tabs v-model="active"   @click="handlePushRouter(active)">
-      <van-tab
-       v-for="(item,index) in constants.tabList"
-       :key="index"
-        :title="item.label"
-        :name="item.name"
-       >
-      </van-tab>
-</van-tabs>
+    <div class="footer">
+      <van-tabs v-model="active"
+                @click="handlePushRouter(active)">
+        <van-tab v-for="(item,index) in constants.tabList"
+                 :key="index"
+                 :title="item.label"
+                 :name="item.name"></van-tab>
+      </van-tabs>
+    </div>
   </div>
 </template>
 <script>
@@ -40,6 +40,11 @@ export default {
   .content {
     flex: 1;
   }
-
+  .footer {
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    height: 40px;
+  }
 }
 </style>
